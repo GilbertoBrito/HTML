@@ -1,1 +1,7 @@
-Primeiros passos na construção de um site de barbearia usando HTML.
+
+# Primeiros passos na construção de um site.
+## Tecnologias utilizadas
+ - HTML;
+ - CSS;
+ - VS Code;
+ - Git
