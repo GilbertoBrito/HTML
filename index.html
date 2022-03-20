@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<title>Barbearia Bigode</title>
-		<link rel="stylesheet" href="style/style.css">
-	</head>
 
-	<body>
-		<header>
-			<h1 class="titulo-principal">Barbearia Bigode</h1>
-		</header>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Barbearia Bigode</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/includes.js"></script>
+</head>
 
-		<img class="banner" src="img/banner.jpg">
-		
+<body>
+	<!-- Snippet é um termo usado em programação para definir uma pequena região de código reutilizável. Snippet do header -->
+	<div include-html="shared/header.html"></div>
+
+	<main>
+		<!-- <img class="banner" src="img/banner.jpg"> -->
+		<img class="img1" src="https://dummyimage.com/600x100/3994ad/ffffff&text=https://dummyimage.com">
 		<div class="principal">
 			<h2 class="titulo-centralizado">Sobre a Barbearia Bigode</h2>
-	 
-			<p>Localizada no coração da cidade a <strong>Barbearia Bigode</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Bigode já é destaque na cidade e conquista novos clientes a cada dia.</p>
-
-			<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
-
-			<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+			<p>Localizada no coração da cidade a <strong>Barbearia Bigode</strong> traz para o mercado o que há de
+				melhor
+				para o seu cabelo e barba. Fundada em 2019, a Barbearia Bigode já é destaque na cidade e conquista novos
+				clientes a cada dia.</p>
+			<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos
+						clientes"</strong>.</em></p>
+			<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui
+				padrão de
+				excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
 		</div>
+		<div class="video">
+			<iframe id="player" type="text/html" width="640" height="360"
+			src="https://www.youtube.com/embed/deZ0C6oS2gw" title="YouTube video player" frameborder="1">
+			</iframe>
+		</div>
+
 
 		<div class="beneficios">
 			<h3 class="titulo-centralizado">Benefícios</h3>
-
 			<ul>
 				<li class="itens">Atendimento aos Clientes</li>
 				<li class="itens">Espaço diferenciado</li>
 				<li class="itens">Localização</li>
 				<li class="itens">Profissionais Qualificados</li>
 			</ul>
+			<!-- <img class="banner" src="img/beneficios.jpg" > -->
+			<img class="img2" src="https://dummyimage.com/1200x200/3994ad/ffffff&text=https://dummyimage.com">
 
-			<img src="img/beneficios.jpg" class="banner">
 		</div>
-	</body>
+	</main>
+	<!-- Snippet é um termo usado em programação para definir uma pequena região de código reutilizável. Snippet do footer -->
+	<div include-html="shared/footer.html"></div>
+	<script>
+		includeHTML();
+	</script>
+</body>
+
+</html>
